@@ -1,17 +1,21 @@
 #!/bin/bash
 
+# Features
+# automatically backs up all images before compressing
+# preserves EXIF data and other metadata such as modified time
 
-# Requirements:
+
+# Requirements
 #       - ImageMagick
 #       - exiftool
 
 
-# USAGE:
-# run this script IN the folder containing the pictures
-compresss_images.sh [COMPRESSION_FACTOR 0-100]
+# USAGE
+# run this script INSIDE the folder containing the images
+# compresss_images.sh [COMPRESSION_FACTOR 0-100]
 
 
-# TODO:
+# TODO
 #       - create folder and proceed to compression
 #       only if at least one image file exists
 #       - add better usage documentation
