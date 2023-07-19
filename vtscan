@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Virustotal Scan
+# Scans the given file using vt-cli and opens the result URL
+# in the default browser
+
+# Installation
+# https://virustotal.github.io/vt-cli/
+
+# Usage
+# vtscan suspicious_file.pdf
+
+xdg-open $(vt scan file $1 -o | awk '{ print $2 }')
+
