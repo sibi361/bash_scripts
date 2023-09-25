@@ -2,5 +2,6 @@
  
 folder=${NAUTILUS_SCRIPT_SELECTED_URIS/"file://"/""}
 
-bash -c "code $folder"
+# Adding --disable-telemetry fixed long startup delay issue
+bash -c "code --disable-telemetry $folder"
 
